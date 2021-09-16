@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  border-radius: 10px;
+  width: 100%;
+  max-width: 950px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-panel{
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-panel:last-child{
+  border-bottom: none;
+}
+
+.pricing-panel img{
+  margin-bottom: 25px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.pricing-panel h2{
+  font-weight: 600;
+  padding: 10px 0 25px 0;
+  border-bottom: 1px solid #e1f1ff;
+  color: grey; 
+  letter-spacing: 1px;
+}
+
+.pricing-panel-items{
+  padding: 25px 0;
+  font-weight: 600;
+  border-bottom: 1px solid #e1f1ff;
+  color:dodgerblue;
+  letter-spacing: 1px;
+}
+
+.price{
+  display: block;
+  color: dodgerblue;
+  padding: 20px 0 10px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.pricing-button{
+ border: 1px solid dodgerblue;
+ border-radius: 10px;
+ color: dodgerblue;
+ display: inline-block;
+ padding: 15px 30px;
+ text-decoration: none;
+ margin: 10px 0 25px;
+ transition: background-color 200mx ease-in-out;
+ background-color: white;
+}
+
+.pricing-button:hover{
+  background-color: #e1f1ff;
+}
+
+.is-featured{
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.is-featured:hover,.is-featured:focus{
+  background-color: #269aff;
+}
+
+
+@media(min-width:900px) {
+  .container{
+    flex-direction: row;
+    height: 500px;
+    box-shadow: 2px 2px 8px #fff;
+  }
+
+  .pricing-panel{
+    border-bottom: none;
+  }
+
+  .pricing-panel:nth-of-type(2n){
+    border-right: 1px solid #e1f1ff;
+    border-left: 1px solid #e1f1ff;
+  }
+
+  .pricing-panel img{
+    height: 140px;
+    width: 200px;
+  }
+}
